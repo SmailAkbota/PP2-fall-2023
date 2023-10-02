@@ -1,5 +1,5 @@
-a = int(input())
-b = int(input())
-c=int(input())
-s=a+b+c
-print(s)
+s = input()  # s == '1 2 3'
+a = s.split()
+for i in range(len(a)):
+    if i%2==0:
+        print(a[i])

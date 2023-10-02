@@ -1,2 +1,4 @@
-a,b,l,n=int(input()),int(input()),int(input()),int(input())
-print(2*a*(n-1)+a+2*b*(n-1)+2*l)
+a = [int(i) for i in input().split()]
+for i in range(1, len(a), 2):
+    a[i - 1], a[i] = a[i], a[i - 1]
+print(' '.join([str(i) for i in a]))

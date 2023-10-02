@@ -1,7 +1,10 @@
-a=int(input())
-b=int(input())
-l=int(input())
-N=int(input())
+numbers = list(map(int, input().split()))
 
-length=2*( (N-1)*(a+b) + l ) + a
-print(length)
+unique_count = 1  
+
+
+for i in range(1, len(numbers)):
+    if numbers[i] != numbers[i - 1]:
+        unique_count += 1
+
+print(unique_count)

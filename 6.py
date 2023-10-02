@@ -1,5 +1,8 @@
-s=int(input())
-k=s+1;
-l=s-1;
-print('The next number for the number',s,'is',k)
-print('The previous number for the number',s,'is', l)
+s=input()
+a=[int(s) for s in s.split()]
+max=-21474836480
+for i in range(0,len(a)):
+    if max<a[i]:
+        max=a[i]
+        c=i
+print(max,c)
