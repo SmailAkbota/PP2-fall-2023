@@ -1,0 +1,6 @@
+s=input()
+t=input()
+a=[int(s) for s in s.split()]
+b=[int(t) for t in t.split()]
+d=set(a)&set(b)
+print(*d)
